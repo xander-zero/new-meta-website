@@ -33,7 +33,7 @@ export const Wrapper = styled.div`
   }
 `;
 
-export const HeaderTitle = styled.h1`
+export const HeaderTitle = styled.h2`
   color: ${({ color }) => color};
   font-weight: ${({ weight }) => weight};
   font-size: ${({ size }) => size};

@@ -22,7 +22,7 @@ const AboutUs = () => {
             <Typography color="#2513d1" className="mb-1">
               {languageData.title_about}
             </Typography>
-            <HeaderTitle size="34px" color="#1e1666">
+            <HeaderTitle size="30px" color="#1e1666">
               {languageData.subTitle_about}
             </HeaderTitle>
             <Typography color="#6a7c92" className="mt-3">

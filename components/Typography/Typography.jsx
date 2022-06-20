@@ -1,3 +1,4 @@
+import { useRouter } from "next/router";
 import styled from "styled-components";
 
 const Typography = ({
@@ -9,13 +10,17 @@ const Typography = ({
   textAlign,
   en,
 }) => {
+  const router = useRouter();
+
   return (
     <Text
       size={size}
       color={color}
       weight={weight}
       className={className}
-      textAlign={textAlign}
+      textAlign={
+        textAlign ? textAlign : router.locale === "fa" ? "justify" : ""
+      }
       en={en}
     >
       {children}
@@ -27,7 +32,7 @@ const Text = styled.p`
   color: ${({ color }) => color};
   font-weight: ${({ weight }) => weight};
   font-size: ${({ size }) => size};
-  text-align: ${({ textAlign }) => (textAlign ? textAlign : "justify")};
+  text-align: ${({ textAlign }) => (textAlign ? textAlign : "")};
   font-family: ${({ en }) => (en ? "Arial" : "IRANSans")};
 `;
 

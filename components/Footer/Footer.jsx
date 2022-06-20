@@ -19,7 +19,7 @@ const Footer = () => {
     {
       id: "1",
       icon: (
-        <a href={languageData.title_email_footer}>
+        <a href={languageData.title_email_footer} rel="nofollow">
           <HiOutlineLocationMarker
             color="#fff"
             style={{ fontWeight: "bold" }}
@@ -28,12 +28,15 @@ const Footer = () => {
         </a>
       ),
       title: languageData.title_phonenumber_footer,
-      desc: "05191002131",
+      desc: "051-91002131",
     },
     {
       id: "2",
       icon: (
-        <a href={languageData.title_email_footer}>
+        <a
+          href={`https://www.instagram.com/${languageData.title_email_footer}`}
+          rel="nofollow"
+        >
           <TbBrandInstagram
             color="#fff"
             style={{ fontWeight: "bold" }}
@@ -47,7 +50,10 @@ const Footer = () => {
     {
       id: "3",
       icon: (
-        <a href={languageData.title_email_footer}>
+        <a
+          href={`https://t.me/${languageData.title_email_footer}`}
+          rel="nofollow"
+        >
           <TbBrandTelegram
             color="#fff"
             style={{ fontWeight: "bold" }}

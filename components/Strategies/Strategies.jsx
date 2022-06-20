@@ -29,7 +29,7 @@ const Strategies = () => {
               <Typography color="#2513d1" className="mb-1">
                 {languageData.title_service}
               </Typography>
-              <HeaderTitle size="34px" color="#1e1666">
+              <HeaderTitle size="30px" color="#1e1666">
                 {text === "crm"
                   ? languageData.title_crm_service
                   : text === "account"

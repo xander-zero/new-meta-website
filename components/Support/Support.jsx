@@ -23,7 +23,7 @@ const Support = () => {
             <Typography color="#2513d1" className="mb-1">
               {languageData.support_title}
             </Typography>
-            <HeaderTitle size="34px" color="#1e1666">
+            <HeaderTitle size="30px" color="#1e1666">
               {languageData.support_subTitle}
             </HeaderTitle>
             <Typography color="#6a7c92" className="mt-3">
@@ -34,13 +34,13 @@ const Support = () => {
                 {router.locale === "en" ? (
                   <>
                     <Typography en size="20px" color="#1E1666">
-                      1000,000+
+                      1,000,000+
                     </Typography>
                   </>
                 ) : (
                   <>
                     <Typography size="20px" color="#1E1666">
-                      1000,000+
+                      1,000,000+
                     </Typography>
                   </>
                 )}

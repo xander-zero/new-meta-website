@@ -93,7 +93,7 @@ const Slider = () => {
           >
             {languageData.comment_people_title}
           </Typography>
-          <HeaderTitle color="#1e1666" size="34px">
+          <HeaderTitle color="#1e1666" size="30px">
             {languageData.comment_people_subTitle}
           </HeaderTitle>
         </div>
