@@ -58,5 +58,8 @@
   "title_phonenumber_footer": "Phone Number",
   "title_email_footer": "info@metanext.bis",
   "address_company": "Company Address",
-  "address_company_desc": "khorasan, mashhad"
+  "address_company_desc": "khorasan, mashhad",
+  "happy_client": "Happy Clients",
+  "project_done": "Project Finished",
+  "win_awar": "Win Award"
 }

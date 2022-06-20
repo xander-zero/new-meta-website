@@ -36,20 +36,17 @@ const Support = () => {
                     <Typography en size="20px" color="#1E1666">
                       2451 M
                     </Typography>
-                    <Typography size="14px" color="#1E1666">
-                      Happy Clients
-                    </Typography>
                   </>
                 ) : (
                   <>
                     <Typography size="20px" color="#1E1666">
                       2451 میلیون
                     </Typography>
-                    <Typography size="14px" color="#1E1666">
-                      مشتری های راضی
-                    </Typography>
                   </>
                 )}
+                <Typography size="14px" color="#1E1666">
+                  {languageData.happy_client}
+                </Typography>
               </div>
               <div>
                 {router.locale === "en" ? (
@@ -57,20 +54,17 @@ const Support = () => {
                     <Typography en size="20px" color="#1E1666">
                       124 M
                     </Typography>
-                    <Typography size="14px" color="#1E1666">
-                      Project Finished
-                    </Typography>
                   </>
                 ) : (
                   <>
                     <Typography size="20px" color="#1E1666">
                       124 میلیون
                     </Typography>
-                    <Typography size="14px" color="#1E1666">
-                      پروژه های به اتمام رسیده
-                    </Typography>
                   </>
                 )}
+                <Typography size="14px" color="#1E1666">
+                  {languageData.project_done}
+                </Typography>
               </div>
               <div>
                 {router.locale === "en" ? (
@@ -78,20 +72,17 @@ const Support = () => {
                     <Typography en size="20px" color="#1E1666">
                       1240 K
                     </Typography>
-                    <Typography size="14px" color="#1E1666">
-                      Win Award
-                    </Typography>
                   </>
                 ) : (
                   <>
                     <Typography size="20px" color="#1E1666">
                       1240 هزار
                     </Typography>
-                    <Typography size="14px" color="#1E1666">
-                      برنده جایزه
-                    </Typography>
                   </>
                 )}
+                <Typography size="14px" color="#1E1666">
+                  {languageData.win_awar}
+                </Typography>
               </div>
             </div>
           </div>
