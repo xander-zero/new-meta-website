@@ -14,6 +14,7 @@ export const LoginWrapper = styled.div`
     width: 50%;
     border-radius: 25px;
     box-shadow: 0px 1px 40px #bdbdbd80;
+
     .right-section {
       border-left: 1px solid #f4f4f4;
       padding: 20px;

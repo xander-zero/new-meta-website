@@ -58,8 +58,9 @@
   "title_phonenumber_footer": "شماره تماس",
   "title_email_footer": "آدرس ایمیل",
   "address_company": "آدرس شرکت",
-  "address_company_desc": "خراسان مشهد",
+  "address_company_desc": "خراسان رضوی مشهد",
   "happy_client": "مشتری های راضی",
   "project_done": "پروژه های به اتمام رسیده",
-  "win_awar": "برنده جایزه"
+  "win_awar": "برنده جایزه",
+  "change_login_mode": "در صورت داشتن اکانت به اکانت خود وارد شوید"
 }

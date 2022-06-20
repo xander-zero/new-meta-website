@@ -7,7 +7,9 @@ import SwitchToggle from "../SwitchToggle/SwitchToggle";
 import { LoginWrapper } from "./LoginStyle";
 import logo from "../../assets/img/logo.png";
 import Typography from "../Typography/Typography";
-import login from "../../assets/img/login.jpg";
+import login from "../../assets/img/Login_form_on_a_smartphone.jpg";
+import Link from "next/link";
+import { useRouter } from "next/router";
 const Login = () => {
   const [type, setType] = useState("login");
 
@@ -17,7 +19,7 @@ const Login = () => {
   return (
     <LoginWrapper>
       <div className="login-wrapper">
-        <div className="row">
+        <div className="row d-flex">
           <div className="col-6 right-section ">
             <div className="row">
               <div className="col-6">
@@ -29,9 +31,9 @@ const Login = () => {
                   alt=""
                 />
               </div>
-              <div className="col-6">
+              {/* <div className="col-6">
                 <SwitchToggle />
-              </div>
+              </div> */}
             </div>
             <div className="w-100 mt-5">
               <Typography color="#000" className="mb-0">
@@ -70,10 +72,24 @@ const Login = () => {
                     ? languageData.login_label_button
                     : languageData.singin_label_button}
                 </Button>
+                <div style={{ marginTop: ".5rem" }}>
+                  <Typography size="12px">
+                    {`${languageData.change_login_mode}, `}
+                    <span
+                      style={{
+                        color: "#508BED",
+                        fontWeight: "bold",
+                        cursor: "pointer",
+                      }}
+                    >
+                      {languageData.singup_label_button}
+                    </span>
+                  </Typography>
+                </div>
               </div>
             </div>
           </div>
-          <div className="col-6">
+          <div className="col-6 h-100 ">
             <Image src={login} layout="intrinsic" alt="" />
           </div>
         </div>

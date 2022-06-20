@@ -3,7 +3,7 @@
   "login_label_phonenumber": "رقم الهاتف",
   "login_label_password": "كلمه السر",
   "login_label_button": "ورود",
-  "singin_label_button": "التسجيل",
+  "singup_label_button": "التسجيل",
   "menu_item_home": "الصفحة الرئيسية",
   "menu_item_auth": "اشترك تسجيل الدخول",
   "menu_item_about": "معلومات عنا",
@@ -60,5 +60,6 @@
   "address_company_desc": "خراسان مشهد",
   "happy_client": "الفوز بالجائزة",
   "project_done": "انتهى المشروع",
-  "win_awar": "الفوز بالجائزة"
+  "win_awar": "الفوز بالجائزة",
+  "change_login_mode": "إذا كان لديك حساب ، قم بتسجيل الدخول إلى حسابك"
 }

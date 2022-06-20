@@ -7,6 +7,7 @@ import {
   HiOutlineMail,
   HiOutlinePhone,
 } from "react-icons/hi";
+import { TbBrandTelegram, TbBrandInstagram } from "react-icons/tb";
 import NavbarCont from "../Navbar/Navbar";
 import { Icon } from "../Card/cardStyle";
 import { useSelector } from "react-redux";
@@ -18,11 +19,13 @@ const Footer = () => {
     {
       id: "1",
       icon: (
-        <HiOutlineLocationMarker
-          color="#fff"
-          style={{ fontWeight: "bold" }}
-          size={20}
-        />
+        <a href={languageData.title_email_footer}>
+          <HiOutlineLocationMarker
+            color="#fff"
+            style={{ fontWeight: "bold" }}
+            size={20}
+          />
+        </a>
       ),
       title: languageData.title_phonenumber_footer,
       desc: "05191002131",
@@ -30,7 +33,13 @@ const Footer = () => {
     {
       id: "2",
       icon: (
-        <HiOutlineMail color="#fff" style={{ fontWeight: "bold" }} size={20} />
+        <a href={languageData.title_email_footer}>
+          <TbBrandInstagram
+            color="#fff"
+            style={{ fontWeight: "bold" }}
+            size={20}
+          />
+        </a>
       ),
       title: languageData.title_email_footer,
       desc: "info@metanext.bis",
@@ -38,7 +47,13 @@ const Footer = () => {
     {
       id: "3",
       icon: (
-        <HiOutlinePhone color="#fff" style={{ fontWeight: "bold" }} size={20} />
+        <a href={languageData.title_email_footer}>
+          <TbBrandTelegram
+            color="#fff"
+            style={{ fontWeight: "bold" }}
+            size={20}
+          />
+        </a>
       ),
       title: languageData.address_company,
       desc: languageData.address_company_desc,

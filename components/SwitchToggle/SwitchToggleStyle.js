@@ -88,3 +88,30 @@ export const SwitchWrapper = styled.div`
     background-color: #671cac2e;
   }
 `;
+
+export const Knobs = styled.div`
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  ::before,
+  ::after {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: fit-content;
+    height: fit-content;
+    color: #fff;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1;
+    padding: 9px 4px;
+    background-color: #490acb;
+    border-radius: 50%;
+    transition: 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
+    content: ${({ login }) => (login ? login : "ثبت نام")};
+  }
+`;

@@ -1,9 +1,9 @@
 {
-  "login_title": "login in behsod",
+  "login_title": "login behsod",
   "login_label_phonenumber": "phone number",
   "login_label_password": "password",
   "login_label_button": "login",
-  "singin_label_button": "sing up",
+  "singup_label_button": "sing up",
   "menu_item_home": "main page",
   "menu_item_auth": "sign up/ log in",
   "menu_item_about": "about us",
@@ -58,8 +58,9 @@
   "title_phonenumber_footer": "Phone Number",
   "title_email_footer": "info@metanext.bis",
   "address_company": "Company Address",
-  "address_company_desc": "khorasan, mashhad",
+  "address_company_desc": "khorasan razavi, mashhad",
   "happy_client": "Happy Clients",
   "project_done": "Project Finished",
-  "win_awar": "Win Award"
+  "win_awar": "Win Award",
+  "change_login_mode": "If you have an account, log in to your account"
 }

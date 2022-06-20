@@ -1,12 +1,12 @@
 import React from "react";
-import { SwitchWrapper } from "./SwitchToggleStyle";
+import { Knobs, SwitchWrapper } from "./SwitchToggleStyle";
 
 const SwitchToggle = () => {
   return (
-    <SwitchWrapper>
+    <SwitchWrapper login="asdads" singup="ثبت نام">
       <div className="button r" id="button-4">
         <input type="checkbox" className="checkbox" />
-        <div className="knobs"></div>
+        <Knobs className="knobs"></Knobs>
         <div className="layer"></div>
       </div>
     </SwitchWrapper>
