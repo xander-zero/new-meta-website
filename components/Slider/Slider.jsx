@@ -97,7 +97,7 @@ const Slider = () => {
             {languageData.comment_people_subTitle}
           </HeaderTitle>
         </div>
-        <div className="m-10 text-center show-slide">
+        <div className="m-10 text-center show-slide mt-4">
           <Zoom {...zoomInProperties}>
             {commentData.map((each, index) => (
               <div key={index} className="flex justify-center w-full h-full">

@@ -25,7 +25,7 @@ const Footer = () => {
         />
       ),
       title: languageData.title_phonenumber_footer,
-      desc: "1st Floor New World Tower Rang.",
+      desc: "05191002131",
     },
     {
       id: "2",
@@ -41,7 +41,7 @@ const Footer = () => {
         <HiOutlinePhone color="#fff" style={{ fontWeight: "bold" }} size={20} />
       ),
       title: languageData.address_company,
-      desc: "+848 556 778 345",
+      desc: languageData.address_company_desc,
     },
   ];
 

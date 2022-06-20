@@ -6,9 +6,11 @@ import seo from "../../assets/img/web-marketing.jpg";
 import { Container } from "react-bootstrap";
 import { useSelector } from "react-redux";
 import { HeaderTitle } from "../../styles/GlobalStyle";
+import { useRouter } from "next/router";
 const Support = () => {
   const languageSelector = useSelector((state) => state.language);
   const { languageData } = languageSelector;
+  const router = useRouter();
 
   return (
     <SupportWrapper id="support">
@@ -29,28 +31,67 @@ const Support = () => {
             </Typography>
             <div className="d-flex justify-content-evenly w-100">
               <div>
-                <Typography en size="20px" color="#1E1666">
-                  2451 M
-                </Typography>
-                <Typography size="14px" color="#1E1666">
-                  Happy Client
-                </Typography>
+                {router.locale === "en" ? (
+                  <>
+                    <Typography en size="20px" color="#1E1666">
+                      2451 M
+                    </Typography>
+                    <Typography size="14px" color="#1E1666">
+                      Happy Clients
+                    </Typography>
+                  </>
+                ) : (
+                  <>
+                    <Typography size="20px" color="#1E1666">
+                      2451 میلیون
+                    </Typography>
+                    <Typography size="14px" color="#1E1666">
+                      مشتری های راضی
+                    </Typography>
+                  </>
+                )}
               </div>
               <div>
-                <Typography en size="20px" color="#1E1666">
-                  124 M
-                </Typography>
-                <Typography size="14px" color="#1E1666">
-                  Project Finished
-                </Typography>
+                {router.locale === "en" ? (
+                  <>
+                    <Typography en size="20px" color="#1E1666">
+                      124 M
+                    </Typography>
+                    <Typography size="14px" color="#1E1666">
+                      Project Finished
+                    </Typography>
+                  </>
+                ) : (
+                  <>
+                    <Typography size="20px" color="#1E1666">
+                      124 میلیون
+                    </Typography>
+                    <Typography size="14px" color="#1E1666">
+                      پروژه های به اتمام رسیده
+                    </Typography>
+                  </>
+                )}
               </div>
               <div>
-                <Typography en size="20px" color="#1E1666">
-                  1240 K
-                </Typography>
-                <Typography size="14px" color="#1E1666">
-                  Win Award
-                </Typography>
+                {router.locale === "en" ? (
+                  <>
+                    <Typography en size="20px" color="#1E1666">
+                      1240 K
+                    </Typography>
+                    <Typography size="14px" color="#1E1666">
+                      Win Award
+                    </Typography>
+                  </>
+                ) : (
+                  <>
+                    <Typography size="20px" color="#1E1666">
+                      1240 هزار
+                    </Typography>
+                    <Typography size="14px" color="#1E1666">
+                      برنده جایزه
+                    </Typography>
+                  </>
+                )}
               </div>
             </div>
           </div>

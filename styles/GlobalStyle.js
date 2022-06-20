@@ -39,7 +39,8 @@ export const HeaderTitle = styled.h1`
   font-size: ${({ size }) => size};
   text-align: ${({ textAlign }) => (textAlign ? textAlign : "")};
   font-family: ${({ en }) => (en ? "Arial" : "IRANSans")};
-
+  letter-spacing: -0.1rem;
+  line-height: 3rem;
   @media (max-width: 768px) {
     font-size: 25px;
   }
