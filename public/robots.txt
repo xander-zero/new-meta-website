@@ -1,0 +1,6 @@
+Sitemap: https://exmple.com
+
+User-agent: *
+Allow: /*
+
+Disallow: /api/*
