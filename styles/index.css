@@ -32,3 +32,29 @@ body {
     url("../assets/fonts/IRANSans/Farsi_numerals/webFonts/fonts/ttf/IRANSansWeb(FaNum).ttf")
       format("truetype");
 }
+.swiper {
+  width: 40%;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.swiper-initialized {
+  display: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.show-slide {
+  width: 50%;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .show-slide {
+    width: 100%;
+    margin: 0 auto;
+  }
+}

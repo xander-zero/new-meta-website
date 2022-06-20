@@ -14,9 +14,72 @@ import face3 from "../../assets/img/face3.jpg";
 import face4 from "../../assets/img/face4.jpg";
 import Image from "next/image";
 import { HeaderTitle } from "../../styles/GlobalStyle";
+import { Zoom } from "react-slideshow-image";
+import "react-slideshow-image/dist/styles.css";
 const Slider = () => {
   const languageSelector = useSelector((state) => state.language);
   const { languageData } = languageSelector;
+
+  const commentData = [
+    {
+      id: "1",
+      img: face1,
+      name: languageData.comment_person_name_1,
+      job: languageData.comment_person_job_1,
+      desciption: languageData.comment_person_1,
+    },
+    {
+      id: "2",
+      img: face2,
+      name: languageData.comment_person_name_1,
+      job: languageData.comment_person_job_1,
+      desciption: languageData.comment_person_1,
+    },
+    {
+      id: "3",
+      img: face3,
+      name: languageData.comment_person_name_1,
+      job: languageData.comment_person_job_1,
+      desciption: languageData.comment_person_1,
+    },
+    {
+      id: "4",
+      img: face4,
+      name: languageData.comment_person_name_1,
+      job: languageData.comment_person_job_1,
+      desciption: languageData.comment_person_1,
+    },
+  ];
+
+  const zoomInProperties = {
+    indicators: true,
+    scale: 1.2,
+    duration: 5000,
+    transitionDuration: 500,
+    infinite: true,
+    prevArrow: (
+      <div style={{ width: "30px", marginRight: "-30px", cursor: "pointer" }}>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 512 512"
+          fill="#6a7c92"
+        >
+          <path d="M242 180.6v-138L0 256l242 213.4V331.2h270V180.6z" />
+        </svg>
+      </div>
+    ),
+    nextArrow: (
+      <div style={{ width: "30px", marginLeft: "-30px", cursor: "pointer" }}>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 512 512"
+          fill="#6a7c92"
+        >
+          <path d="M512 256L270 42.6v138.2H0v150.6h270v138z" />
+        </svg>
+      </div>
+    ),
+  };
 
   return (
     <Container>
@@ -34,77 +97,23 @@ const Slider = () => {
             {languageData.comment_people_subTitle}
           </HeaderTitle>
         </div>
-        <div style={{ width: "100vm", justifyContent: "center" }}>
-          <Swiper
-            slidesPerView={1}
-            spaceBetween={30}
-            loop={true}
-            pagination={{
-              clickable: true,
-            }}
-            modules={[Pagination]}
-            className="mySwiper"
-          >
-            <SwiperSlide style={{ width: "100%" }}>
-              <div className="wrapper text-center">
-                <Image layout="fixed" src={face1} alt="" />
-                <Typography className="w-50 mx-auto" color="#6a7c92">
-                  {languageData.comment_person_1}
-                </Typography>
+        <div className="m-10 text-center show-slide">
+          <Zoom {...zoomInProperties}>
+            {commentData.map((each, index) => (
+              <div key={index} className="flex justify-center w-full h-full">
+                <Image src={each.img} alt={each.name} />
                 <Typography textAlign="center" color="#1e1666" className="m-0">
-                  {languageData.comment_person_name_1}
+                  {each.name}
                 </Typography>
                 <Typography textAlign="center" color="#2f1ed3" className="pb-3">
-                  {languageData.comment_person_job_1}
+                  {each.job}
+                </Typography>
+                <Typography textAlign="center" color="#6a7c92" className="pb-3">
+                  {each.desciption}
                 </Typography>
               </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="wrapper text-center">
-                <Image layout="fixed" src={face2} alt="" />
-                <Typography className="w-50 mx-auto" color="#6a7c92">
-                  Soren very company business under-full for adipisicing
-                  eliterdo eiusmod tempor asem incididuntlabore dolore magna.
-                </Typography>
-                <Typography textAlign="center" color="#1e1666" className="m-0">
-                  Ira Melon
-                </Typography>
-                <Typography textAlign="center" color="#2f1ed3" className="pb-3">
-                  CEO Founder
-                </Typography>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="wrapper text-center">
-                <Image layout="fixed" src={face3} alt="" />
-                <Typography className="w-50 mx-auto" color="#6a7c92">
-                  Soren very company business under-full for adipisicing
-                  eliterdo eiusmod tempor asem incididuntlabore dolore magna.
-                </Typography>
-                <Typography textAlign="center" color="#1e1666" className="m-0">
-                  Ira Melon
-                </Typography>
-                <Typography textAlign="center" color="#2f1ed3" className="pb-3">
-                  CEO Founder
-                </Typography>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="wrapper text-center">
-                <Image layout="fixed" src={face4} alt="" />
-                <Typography className="w-50 mx-auto" color="#6a7c92">
-                  Soren very company business under-full for adipisicing
-                  eliterdo eiusmod tempor asem incididuntlabore dolore magna.
-                </Typography>
-                <Typography textAlign="center" color="#1e1666" className="m-0">
-                  Ira Melon
-                </Typography>
-                <Typography textAlign="center" color="#2f1ed3" className="pb-3">
-                  CEO Founder
-                </Typography>
-              </div>
-            </SwiperSlide>
-          </Swiper>
+            ))}
+          </Zoom>
         </div>
       </SliderStyle>
     </Container>

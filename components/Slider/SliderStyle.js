@@ -5,6 +5,9 @@ export const SliderStyle = styled.div`
   .swiper {
     z-index: 0;
   }
+  .mySwiper {
+    width: 100%;
+  }
   .swiper-pagination {
     .swiper-pagination-bullet {
       background: #bfcadc;
