@@ -59,8 +59,8 @@
   "title_email_footer": "آدرس ایمیل",
   "address_company": "آدرس شرکت",
   "address_company_desc": "خراسان رضوی مشهد",
-  "happy_client": "مشتری های راضی",
-  "project_done": "پروژه های به اتمام رسیده",
-  "win_awar": "برنده جایزه",
+  "happy_client": "تعداد خط کد",
+  "project_done": "تعداد ساعت های کار شده",
+  "win_awar": "تعداد افراد",
   "change_login_mode": "در صورت داشتن اکانت به اکانت خود وارد شوید"
 }

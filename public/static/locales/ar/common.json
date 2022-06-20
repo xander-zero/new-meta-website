@@ -58,8 +58,8 @@
   "title_email_footer": "info@metanext.bis",
   "address_company": "عنوان الشركة",
   "address_company_desc": "خراسان مشهد",
-  "happy_client": "الفوز بالجائزة",
-  "project_done": "انتهى المشروع",
-  "win_awar": "الفوز بالجائزة",
+  "happy_client": "عدد سطور الكود",
+  "project_done": "عدد ساعات العمل",
+  "win_awar": "عدد الأشخاص",
   "change_login_mode": "إذا كان لديك حساب ، قم بتسجيل الدخول إلى حسابك"
 }

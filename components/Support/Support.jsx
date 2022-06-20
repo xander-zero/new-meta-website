@@ -34,13 +34,13 @@ const Support = () => {
                 {router.locale === "en" ? (
                   <>
                     <Typography en size="20px" color="#1E1666">
-                      2451 M
+                      1000,000+
                     </Typography>
                   </>
                 ) : (
                   <>
                     <Typography size="20px" color="#1E1666">
-                      2451 میلیون
+                      1000,000+
                     </Typography>
                   </>
                 )}
@@ -52,13 +52,13 @@ const Support = () => {
                 {router.locale === "en" ? (
                   <>
                     <Typography en size="20px" color="#1E1666">
-                      124 M
+                      150,000 hour
                     </Typography>
                   </>
                 ) : (
                   <>
                     <Typography size="20px" color="#1E1666">
-                      124 میلیون
+                      150,000 ساعت
                     </Typography>
                   </>
                 )}
@@ -70,13 +70,13 @@ const Support = () => {
                 {router.locale === "en" ? (
                   <>
                     <Typography en size="20px" color="#1E1666">
-                      1240 K
+                      50 person
                     </Typography>
                   </>
                 ) : (
                   <>
                     <Typography size="20px" color="#1E1666">
-                      1240 هزار
+                      50 نفر
                     </Typography>
                   </>
                 )}
