@@ -39,4 +39,9 @@ export const LoginWrapper = styled.div`
       }
     }
   }
+  .image-login {
+    @media (max-width: 568px) {
+      display: none;
+    }
+  }
 `;

@@ -89,7 +89,7 @@ const Login = () => {
               </div>
             </div>
           </div>
-          <div className="col-6 h-100 ">
+          <div className="col-6 h-100 image-login">
             <Image src={login} layout="intrinsic" alt="" />
           </div>
         </div>
