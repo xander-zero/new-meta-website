@@ -5,7 +5,7 @@ import { Container } from "react-bootstrap";
 import HeaderImg from "../../assets/img/Header-img.jpg";
 import CrmLogo from "../../assets/img/CrmAgency.png";
 import Image from "next/image";
-import logo from "../../assets/img/logo.png";
+import logo from "../../assets/img/metanextlogo.png";
 import Typography from "../Typography/Typography";
 import NavbarCont from "../Navbar/Navbar";
 // import Button from "../Button/Button";

@@ -99,13 +99,21 @@ const NavbarCont = ({ image, fix }) => {
               </div>
             </Nav>
           </Navbar.Collapse>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand
+            href="#home"
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              width: "90px",
+            }}
+          >
             <Image
               src={image}
               alt="Picture of the author"
-              width="40px"
-              height="40px"
-              layout="responsive"
+              width="100px"
+              height="100px"
+              layout="intrinsic"
             />
           </Navbar.Brand>
         </Container>
