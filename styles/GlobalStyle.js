@@ -39,6 +39,7 @@ export const HeaderTitle = styled.h2`
   font-size: ${({ size }) => size};
   text-align: ${({ textAlign }) => (textAlign ? textAlign : "")};
   font-family: ${({ en }) => (en ? "Arial" : "IRANSans")};
+  font-weight: bold !important;
   /* letter-spacing: -0.1rem; */
   /* line-height: 3rem; */
   @media (max-width: 768px) {

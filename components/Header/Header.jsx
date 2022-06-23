@@ -53,7 +53,12 @@ const Header = () => {
       <Container>
         <div className="row mt-5">
           <div className="col-lg-6 mt-lg-5 col-md-12 text-wrapper">
-            <Typography color="#fff" size="44px" className="page-title">
+            <Typography
+              weight="bold"
+              color="#fff"
+              size="44px"
+              className="page-title"
+            >
               {languageData.title_header}
             </Typography>
             <Typography color="#fff" className="page-title-description">

@@ -26,7 +26,7 @@ const Strategies = () => {
         <div className="row m-0 p-0">
           <div className="col-lg-6 col-12 d-flex align-items-center mt-5">
             <div className="scale-up-center">
-              <Typography color="#2513d1" className="mb-1">
+              <Typography weight="bold" color="#2513d1" className="mb-1">
                 {languageData.title_service}
               </Typography>
               <HeaderTitle size="30px" color="#1e1666">
@@ -63,7 +63,12 @@ const Strategies = () => {
                     alt="Picture of the author"
                     layout="intrinsic"
                   />
-                  <Typography size="24px" className="mb-0 mt-3" color="#1e1666">
+                  <Typography
+                    weight="bold"
+                    size="16px"
+                    className="mb-0 mt-3"
+                    color="#1e1666"
+                  >
                     {languageData.title_crm_service}
                   </Typography>
                   <Typography size="14px" className="mb-0 p-0" color="#6a7c92">
@@ -76,7 +81,12 @@ const Strategies = () => {
                     alt="Picture of the author"
                     layout="intrinsic"
                   />
-                  <Typography size="24px" className="mb-0 mt-3" color="#1e1666">
+                  <Typography
+                    weight="bold"
+                    size="16px"
+                    className="mb-0 mt-3"
+                    color="#1e1666"
+                  >
                     {languageData.title_account_service}
                   </Typography>
                   <Typography size="14px" className="mb-0 p-0" color="#6a7c92">
@@ -104,14 +114,16 @@ const Strategies = () => {
                     alt="Picture of the author"
                     layout="intrinsic"
                   />
-                  <Typography size="24px" className="mb-0 mt-3" color="#1e1666">
-                    {languageData.title_mangeContent_service}
+                  <Typography
+                    weight="bold"
+                    size="16px"
+                    className="mb-0 mt-3"
+                    color="#1e1666"
+                  >
+                    {languageData.title_all_services}
                   </Typography>
                   <Typography size="14px" className="mb-0 p-0" color="#6a7c92">
-                    {`${languageData.desc_manageContent_service?.substring(
-                      0,
-                      100
-                    )}...`}
+                    {`${languageData.desc_all_services?.substring(0, 100)}...`}
                   </Typography>
                 </div>
               </div>
@@ -122,7 +134,12 @@ const Strategies = () => {
                     alt="Picture of the author"
                     layout="intrinsic"
                   />
-                  <Typography size="24px" className="mb-0 mt-3" color="#1e1666">
+                  <Typography
+                    weight="bold"
+                    size="16px"
+                    className="mb-0 mt-3"
+                    color="#1e1666"
+                  >
                     {languageData.title_shop_service}
                   </Typography>
                   <Typography size="14px" className="mb-0 p-0" color="#6a7c92">
@@ -135,7 +152,12 @@ const Strategies = () => {
                     alt="Picture of the author"
                     layout="intrinsic"
                   />
-                  <Typography size="24px" className="mb-0 mt-3" color="#1e1666">
+                  <Typography
+                    weight="bold"
+                    size="16px"
+                    className="mb-0 mt-3"
+                    color="#1e1666"
+                  >
                     {languageData.title_mangeContent_service}
                   </Typography>
                   <Typography size="14px" className="mb-0 p-0" color="#6a7c92">

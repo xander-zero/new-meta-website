@@ -19,7 +19,7 @@ const AboutUs = () => {
       <Container>
         <div className="row mt-5">
           <div className="col-lg-6">
-            <Typography color="#2513d1" className="mb-1">
+            <Typography weight="bold" color="#2513d1" className="mb-1">
               {languageData.title_about}
             </Typography>
             <HeaderTitle size="30px" color="#1e1666">
