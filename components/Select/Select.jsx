@@ -1,11 +1,11 @@
 // import Select from "react-select";
 import { Label, SelectWrapper, Select, Option } from "./SelectStyle";
 
-const SimpleSelect = ({ label, onChange, options, value }) => {
+const SimpleSelect = ({ label, onChange, options, value, bgColor }) => {
   return (
     <SelectWrapper>
       {label ? <Label></Label> : null}
-      <Select onChange={onChange} defaultValue={value}>
+      <Select onChange={onChange} defaultValue={value} bgColor={bgColor}>
         {options?.map((option, index) => (
           <Option value={option.value} key={index}>
             {option.label}

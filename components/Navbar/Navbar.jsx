@@ -8,7 +8,7 @@ import SimpleSelect from "../Select/Select";
 import { useRouter } from "next/router";
 import { useSelector } from "react-redux";
 import { handleScroll } from "../../helper/smoothScroll";
-const NavbarCont = ({ image, fix }) => {
+const NavbarCont = ({ image, fix, color, bgColor }) => {
   const languageSelector = useSelector((state) => state.language);
   const { languageData } = languageSelector;
 
@@ -52,18 +52,11 @@ const NavbarCont = ({ image, fix }) => {
                   : "ms-auto"
               }
             >
-              <Nav.Link>
-                <SimpleSelect
-                  placeholder="انتخاب زبان"
-                  options={languages}
-                  onChange={onChange}
-                  value={type}
-                />
-              </Nav.Link>
+              <Nav.Link></Nav.Link>
               <div>
                 <Link href="/login" passHref>
                   <Nav.Link>
-                    <Typography color="#fff">
+                    <Typography color={color}>
                       {languageData.menu_item_auth}
                     </Typography>
                   </Nav.Link>
@@ -71,34 +64,41 @@ const NavbarCont = ({ image, fix }) => {
               </div>
               <div onClick={() => handleScroll("home", "start")}>
                 <Nav.Link href="#" id={languageData.menu_item_about}>
-                  <Typography color="#fff">
+                  <Typography color={color}>
                     {languageData.menu_item_home}
                   </Typography>
                 </Nav.Link>
               </div>
               <div onClick={() => handleScroll("about", "start")}>
                 <Nav.Link href="#">
-                  <Typography color="#fff">
+                  <Typography color={color}>
                     {languageData.menu_item_about}
                   </Typography>
                 </Nav.Link>
               </div>
               <div onClick={() => handleScroll("support", "start")}>
                 <Nav.Link href="#">
-                  <Typography color="#fff">
+                  <Typography color={color}>
                     {languageData.menu_item_contact}
                   </Typography>
                 </Nav.Link>
               </div>
               <div onClick={() => handleScroll("service", "start")}>
                 <Nav.Link href="#">
-                  <Typography color="#fff">
+                  <Typography color={color}>
                     {languageData.menu_item_service}
                   </Typography>
                 </Nav.Link>
               </div>
             </Nav>
           </Navbar.Collapse>
+          <SimpleSelect
+            placeholder="انتخاب زبان"
+            options={languages}
+            onChange={onChange}
+            value={type}
+            bgColor={bgColor}
+          />
           <Navbar.Brand
             href="#home"
             style={{
@@ -111,8 +111,8 @@ const NavbarCont = ({ image, fix }) => {
             <Image
               src={image}
               alt="Picture of the author"
-              width="100px"
-              height="100px"
+              width="60px"
+              height="60px"
               layout="intrinsic"
             />
           </Navbar.Brand>

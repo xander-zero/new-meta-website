@@ -73,7 +73,7 @@ const Footer = () => {
     <FooterStyle>
       <div className="container">
         <Typography size="35px" weight="bold" color="#fff" textAlign="center">
-          Behsod
+          Meta Next
         </Typography>
         <Wrapper postion="space-between">
           <CardList items={items} color="#fff" />

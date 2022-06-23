@@ -56,7 +56,7 @@ const Strategies = () => {
           </div>
           <div className="col-lg-6 col-12">
             <div className="row">
-              <div className="col-6 ">
+              <div className="col-lg-4 col-md-4 col-sm-6 col-12 ">
                 <div className="cart " onClick={() => setText("crm")}>
                   <Image
                     src={s4}
@@ -87,7 +87,35 @@ const Strategies = () => {
                   </Typography>
                 </div>
               </div>
-              <div className="col-6 ">
+              <div
+                className="col-lg-4 col-md-4 col-sm-6 col-12"
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                <div
+                  className="cart w-100"
+                  onClick={() => setText("mangeContent")}
+                >
+                  <Image
+                    src={s3}
+                    alt="Picture of the author"
+                    layout="intrinsic"
+                  />
+                  <Typography size="24px" className="mb-0 mt-3" color="#1e1666">
+                    {languageData.title_mangeContent_service}
+                  </Typography>
+                  <Typography size="14px" className="mb-0 p-0" color="#6a7c92">
+                    {`${languageData.desc_manageContent_service?.substring(
+                      0,
+                      100
+                    )}...`}
+                  </Typography>
+                </div>
+              </div>
+              <div className="col-lg-4 col-md-4 col-sm-6 col-12 ">
                 <div className="cart" onClick={() => setText("shop")}>
                   <Image
                     src={s2}

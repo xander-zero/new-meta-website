@@ -5,7 +5,7 @@ import { Container } from "react-bootstrap";
 import HeaderImg from "../../assets/img/Header-img.jpg";
 import CrmLogo from "../../assets/img/CrmAgency.png";
 import Image from "next/image";
-import logo from "../../assets/img/metanextlogo.png";
+import logo from "../../assets/img/2515215215.png";
 import Typography from "../Typography/Typography";
 import NavbarCont from "../Navbar/Navbar";
 // import Button from "../Button/Button";
@@ -42,9 +42,14 @@ const Header = () => {
     <HeaderStyle
       id="home"
       image={HeaderImg}
-      navbgColor={scrollPosition !== 0 ? "#2513d1" : "transparent"}
+      navbgColor={scrollPosition !== 0 ? "#fff" : "transparent"}
     >
-      <NavbarCont image={logo} fix={""} />
+      <NavbarCont
+        image={logo}
+        fix={""}
+        color={scrollPosition !== 0 ? "#6A7C92" : "#fff"}
+        bgColor={scrollPosition !== 0 ? "#6A7C92" : "#1e1666"}
+      />
       <Container>
         <div className="row mt-5">
           <div className="col-lg-6 mt-lg-5 col-md-12 text-wrapper">

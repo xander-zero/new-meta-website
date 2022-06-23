@@ -11,7 +11,7 @@ export const Label = styled.label`
 export const Select = styled.select`
   font-size: 12px;
   padding: 0.2rem 0.5rem;
-  background-color: #1e1666;
+  background-color: ${({ bgColor }) => bgColor};
   color: #fff;
   outline: 0;
   border: none;
