@@ -88,14 +88,15 @@ const Slider = () => {
           <Typography
             textAlign="center"
             color="#2513d1"
-            size="20px"
+            size="24px"
+            weight="bold"
             className="mb-0"
           >
             {languageData.comment_people_title}
           </Typography>
-          <HeaderTitle color="#1e1666" size="30px">
+          <Typography textAlign="center" color="#1e1666" size="20px">
             {languageData.comment_people_subTitle}
-          </HeaderTitle>
+          </Typography>
         </div>
         <div className="m-10 text-center show-slide mt-4">
           <Zoom {...zoomInProperties}>

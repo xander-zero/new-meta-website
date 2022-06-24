@@ -19,12 +19,17 @@ const AboutUs = () => {
       <Container>
         <div className="row mt-5">
           <div className="col-lg-6">
-            <Typography weight="bold" color="#2513d1" className="mb-1">
+            <Typography
+              size="24px"
+              weight="bold"
+              color="#2513d1"
+              className="mb-1"
+            >
               {languageData.title_about}
             </Typography>
-            <HeaderTitle size="30px" color="#1e1666">
+            <Typography size="20px" color="#1e1666">
               {languageData.subTitle_about}
-            </HeaderTitle>
+            </Typography>
             <Typography color="#6a7c92" className="mt-3">
               {languageData.desc_goal_about}
             </Typography>
@@ -34,7 +39,11 @@ const AboutUs = () => {
                   <IoCheckmarkCircleOutline size="30px" color="#2513d1" />
                 </div>
                 <div className="me-3">
-                  <Typography color="#1e1666" className="mt-1 mb-0">
+                  <Typography
+                    weight="bold"
+                    color="#1e1666"
+                    className="mt-1 mb-0"
+                  >
                     {languageData.title_mention_about}
                   </Typography>
                   <Typography color="#6a7c92">
@@ -47,7 +56,11 @@ const AboutUs = () => {
                   <IoCheckmarkCircleOutline size="30px" color="#2513d1" />
                 </div>
                 <div className="me-3">
-                  <Typography color="#1e1666" className="mt-1 mb-0">
+                  <Typography
+                    weight="bold"
+                    color="#1e1666"
+                    className="mt-1 mb-0"
+                  >
                     {languageData.title_profecy_about}
                   </Typography>
                   <Typography color="#6a7c92">
@@ -60,7 +73,11 @@ const AboutUs = () => {
                   <IoCheckmarkCircleOutline size="30px" color="#2513d1" />
                 </div>
                 <div className="me-3">
-                  <Typography color="#1e1666" className="mt-1 mb-0">
+                  <Typography
+                    weight="bold"
+                    color="#1e1666"
+                    className="mt-1 mb-0"
+                  >
                     {languageData.title_viewport_about}
                   </Typography>
                   <Typography color="#6a7c92">

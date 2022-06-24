@@ -26,10 +26,15 @@ const Strategies = () => {
         <div className="row m-0 p-0">
           <div className="col-lg-6 col-12 d-flex align-items-center mt-5">
             <div className="scale-up-center">
-              <Typography weight="bold" color="#2513d1" className="mb-1">
+              <Typography
+                size="24px"
+                weight="bold"
+                color="#2513d1"
+                className="mb-1"
+              >
                 {languageData.title_service}
               </Typography>
-              <HeaderTitle size="30px" color="#1e1666">
+              <Typography size="20px" color="#1e1666">
                 {text === "crm"
                   ? languageData.title_crm_service
                   : text === "account"
@@ -39,7 +44,7 @@ const Strategies = () => {
                   : text === "mangeContent"
                   ? languageData.title_mangeContent_service
                   : ""}
-              </HeaderTitle>
+              </Typography>
               <Typography color="#6a7c92">
                 {text === "crm"
                   ? languageData.desc_crm_service

@@ -1,7 +1,10 @@
 import styled from "styled-components";
 
 export const FooterStyle = styled.div`
-  background-color: #1e1666;
+  background: url(${(props) => props.image.src});
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;

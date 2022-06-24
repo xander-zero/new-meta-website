@@ -20,69 +20,74 @@ const Support = () => {
             <Image layout="intrinsic" src={seo} alt="" />
           </div>
           <div className="col-lg-6 mt-5">
-            <Typography color="#2513d1" className="mb-1">
+            <Typography
+              size="24px"
+              weight="bold"
+              color="#2513d1"
+              className="mb-1"
+            >
               {languageData.support_title}
             </Typography>
-            <HeaderTitle size="30px" color="#1e1666">
+            <Typography size="20px" color="#1e1666">
               {languageData.support_subTitle}
-            </HeaderTitle>
+            </Typography>
             <Typography color="#6a7c92" className="mt-3">
               {languageData.support_desc}
             </Typography>
             <div className="d-flex justify-content-evenly w-100">
               <div>
+                <Typography weight="bold" size="14px" color="#1E1666">
+                  {languageData.happy_client}
+                </Typography>
                 {router.locale === "en" ? (
                   <>
-                    <Typography en size="20px" color="#1E1666">
+                    <Typography en size="16px" color="#2513d1">
                       1,000,000+
                     </Typography>
                   </>
                 ) : (
                   <>
-                    <Typography size="20px" color="#1E1666">
+                    <Typography size="16px" color="#2513d1">
                       1,000,000+
                     </Typography>
                   </>
                 )}
-                <Typography size="14px" color="#1E1666">
-                  {languageData.happy_client}
-                </Typography>
               </div>
               <div>
+                <Typography weight="bold" size="14px" color="#1E1666">
+                  {languageData.project_done}
+                </Typography>
                 {router.locale === "en" ? (
                   <>
-                    <Typography en size="20px" color="#1E1666">
+                    <Typography en size="16px" color="#2513d1">
                       150,000 hour
                     </Typography>
                   </>
                 ) : (
                   <>
-                    <Typography size="20px" color="#1E1666">
+                    <Typography size="16px" color="#2513d1">
                       150,000 ساعت
                     </Typography>
                   </>
                 )}
-                <Typography size="14px" color="#1E1666">
-                  {languageData.project_done}
-                </Typography>
               </div>
               <div>
+                <Typography weight="bold" size="14px" color="#1E1666">
+                  {languageData.win_awar}
+                </Typography>
                 {router.locale === "en" ? (
                   <>
-                    <Typography en size="20px" color="#1E1666">
+                    <Typography en size="16px" color="#2513d1">
                       50 person
                     </Typography>
                   </>
                 ) : (
                   <>
-                    <Typography size="20px" color="#1E1666">
+                    <Typography size="16px" color="#2513d1">
                       50 نفر
                     </Typography>
                   </>
                 )}
-                <Typography size="14px" color="#1E1666">
-                  {languageData.win_awar}
-                </Typography>
               </div>
             </div>
           </div>

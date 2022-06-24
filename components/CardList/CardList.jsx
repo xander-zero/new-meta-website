@@ -2,7 +2,7 @@
 import { useSelector } from "react-redux";
 import Card from "../Card/Card";
 
-const CardList = ({ items, bgColor, color, textAlign }) => {
+const CardList = ({ items, bgColor, color, textAlign, colorDesc }) => {
   const authSelector = useSelector((state) => state.auth);
 
   return (
@@ -16,6 +16,7 @@ const CardList = ({ items, bgColor, color, textAlign }) => {
           desc={item.desc}
           color={color}
           textAlign={textAlign}
+          colorDesc={colorDesc}
         />
       ))}
     </>

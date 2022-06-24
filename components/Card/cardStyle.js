@@ -13,7 +13,7 @@ export const CardContent = styled.div`
   border-radius: 10px;
   transition: 0.5s;
   margin-bottom: 30px;
-  box-shadow: 0 0 1px #cccccc;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   &:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 50px 0 rgba(0, 0, 0, 0.08);

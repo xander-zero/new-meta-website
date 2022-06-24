@@ -79,7 +79,12 @@ const Services = () => {
   return (
     <ServiceStyle img={bgService} id="service">
       <Row>
-        <Typography size="30px" color="#fff" className="services-title">
+        <Typography
+          weight="bold"
+          size="30px"
+          color="#fff"
+          className="services-title"
+        >
           {languageData.title_pannel_management}
         </Typography>
         <Typography color="#fff" size="16px" className="service-description">
@@ -92,6 +97,7 @@ const Services = () => {
           bgColor="#FFFFFF"
           items={items}
           color="#1e1666"
+          colorDesc="#6a7c92"
         />
       </Wrapper>
     </ServiceStyle>

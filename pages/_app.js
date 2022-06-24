@@ -3,8 +3,8 @@ import { Provider } from "react-redux";
 import { store } from "../redux/store/store";
 import MainLayout from "../layout/MainLayout";
 import "../styles/index.css";
+import "../styles/styles.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-
 function MyApp({ Component, pageProps }) {
   return (
     <Provider store={store}>

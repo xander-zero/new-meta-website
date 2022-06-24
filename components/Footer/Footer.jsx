@@ -11,6 +11,7 @@ import { TbBrandTelegram, TbBrandInstagram } from "react-icons/tb";
 import NavbarCont from "../Navbar/Navbar";
 import { Icon } from "../Card/cardStyle";
 import { useSelector } from "react-redux";
+import bgFooter from "../../assets/img/animatedshape.svg";
 const Footer = () => {
   const languageSelector = useSelector((state) => state.language);
   const { languageData } = languageSelector;
@@ -70,7 +71,7 @@ const Footer = () => {
     return <h1>Loading...</h1>;
   }
   return (
-    <FooterStyle>
+    <FooterStyle image={bgFooter}>
       <div className="container">
         <Typography size="35px" weight="bold" color="#fff" textAlign="center">
           Meta Next
