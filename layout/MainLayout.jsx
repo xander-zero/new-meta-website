@@ -27,7 +27,7 @@ const MainLayout = ({ children }) => {
       document.body.style.direction = "rtl";
       dispatch(setLanguage(languageData));
     }
-  }, [language, dispatch]);
+  }, [language, dispatch, languageData]);
 
   return (
     <Wrapper>
