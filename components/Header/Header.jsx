@@ -17,7 +17,7 @@ const Header = () => {
   // const t = router?.locale === "en" ? en : fa;
 
   const [scrollPosition, setScrollPosition] = useState(0);
-
+  const [width, setWidth] = useState(null);
   const languageSelector = useSelector((state) => state.language);
   const { languageData } = languageSelector;
 
@@ -34,6 +34,11 @@ const Header = () => {
     };
   }, []);
 
+  useEffect(() => {
+    const widthInnter = window.innerWidth;
+    setWidth(widthInnter);
+  }, []);
+
   if (!languageData) {
     return <h1>Loading...</h1>;
   }
@@ -42,7 +47,9 @@ const Header = () => {
     <HeaderStyle
       id="home"
       image={HeaderImg}
-      navbgColor={scrollPosition !== 0 ? "#fff" : "transparent"}
+      navbgColor={
+        scrollPosition !== 0 ? "#fff" : width < 568 ? "transparent" : ""
+      }
     >
       <NavbarCont
         image={logo}

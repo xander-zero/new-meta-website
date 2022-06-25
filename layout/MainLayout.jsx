@@ -19,6 +19,13 @@ const MainLayout = ({ children }) => {
   const language = router.locale;
   const languageData = language === "en" ? en : language === "fa" ? fa : ar;
 
+  const handleCloseToggle = () => {
+    const navbarToggle = document.getElementById("responsive-navbar-nav");
+    if (navbarToggle.classList.contains("show")) {
+      navbarToggle.classList.remove("show");
+    }
+  };
+
   useEffect(() => {
     if (language === "en") {
       document.body.style.direction = "ltr";
@@ -30,7 +37,7 @@ const MainLayout = ({ children }) => {
   }, [language, dispatch, languageData]);
 
   return (
-    <Wrapper>
+    <Wrapper onClick={handleCloseToggle}>
       <HeadTitle lng={language} />
       <GlobalStyle />
       {router.pathname === "/login" || router.pathname === "/contact" ? null : (

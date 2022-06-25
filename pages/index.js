@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useSelector } from "react-redux";
 import AboutUs from "../components/AboutUs/AboutUs";
 import HeadTitle from "../components/HeadTitle/HeadTitle";
