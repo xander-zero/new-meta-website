@@ -76,10 +76,19 @@ const NavbarCont = ({ image, fix, color, bgColor }) => {
                   </Typography>
                 </Nav.Link>
               </div>
+              <div>
+                <Link href="/contact" passHref>
+                  <Nav.Link>
+                    <Typography color={color}>
+                      {languageData.menu_item_contact}
+                    </Typography>
+                  </Nav.Link>
+                </Link>
+              </div>
               <div onClick={() => handleScroll("support", "start")}>
                 <Nav.Link href="#">
                   <Typography color={color}>
-                    {languageData.menu_item_contact}
+                    {languageData.menu_item_features}
                   </Typography>
                 </Nav.Link>
               </div>

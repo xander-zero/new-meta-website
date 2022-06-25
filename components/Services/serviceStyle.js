@@ -12,6 +12,13 @@ export const ServiceStyle = styled.div`
   flex-direction: column;
   padding: 4rem;
   text-align: center;
+  background: rgb(84, 19, 201);
+  background: radial-gradient(
+    circle,
+    rgba(84, 19, 201, 1) 0%,
+    rgba(106, 39, 180, 1) 29%,
+    rgba(70, 16, 202, 1) 100%
+  );
   @media (max-width: 768px) {
     padding: 1rem;
   }

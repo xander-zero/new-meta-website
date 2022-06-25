@@ -33,10 +33,15 @@ const MainLayout = ({ children }) => {
     <Wrapper>
       <HeadTitle lng={language} />
       <GlobalStyle />
-      {router.pathname === "/login" ? null : <Header />}
+      {router.pathname === "/login" || router.pathname === "/contact" ? null : (
+        <Header />
+      )}
       {children}
       <div className="d-flex">
-        {router.pathname === "/login" ? null : <Footer />}
+        {router.pathname === "/login" ||
+        router.pathname === "/contact" ? null : (
+          <Footer />
+        )}
       </div>
     </Wrapper>
   );

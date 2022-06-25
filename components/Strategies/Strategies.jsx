@@ -11,6 +11,7 @@ import Typography from "../Typography/Typography";
 import { MdOutlineVideoSettings } from "react-icons/md";
 import { useSelector } from "react-redux";
 import { HeaderTitle } from "../../styles/GlobalStyle";
+import { handleScroll } from "../../helper/smoothScroll";
 
 const Strategies = () => {
   const languageSelector = useSelector((state) => state.language);
@@ -43,6 +44,8 @@ const Strategies = () => {
                   ? languageData.title_shop_service
                   : text === "mangeContent"
                   ? languageData.title_mangeContent_service
+                  : text === "managePannel"
+                  ? languageData.title_all_services
                   : ""}
               </Typography>
               <Typography color="#6a7c92">
@@ -54,6 +57,8 @@ const Strategies = () => {
                   ? languageData.desc_shop_service
                   : text === "mangeContent"
                   ? languageData.desc_manageContent_service
+                  : text === "managePannel"
+                  ? languageData.desc_all_services
                   : ""}
               </Typography>
               <MdOutlineVideoSettings size="30px" color="#2513d1" />
@@ -62,7 +67,13 @@ const Strategies = () => {
           <div className="col-lg-6 col-12">
             <div className="row">
               <div className="col-lg-4 col-md-4 col-sm-6 col-12 ">
-                <div className="cart " onClick={() => setText("crm")}>
+                <div
+                  className="cart "
+                  onClick={() => {
+                    setText("crm");
+                    handleScroll("strategies", "start");
+                  }}
+                >
                   <Image
                     src={s4}
                     alt="Picture of the author"
@@ -80,7 +91,13 @@ const Strategies = () => {
                     {`${languageData.desc_crm_service?.substring(0, 100)}...`}
                   </Typography>
                 </div>
-                <div className="cart" onClick={() => setText("account")}>
+                <div
+                  className="cart"
+                  onClick={() => {
+                    setText("account");
+                    handleScroll("strategies", "start");
+                  }}
+                >
                   <Image
                     src={s1}
                     alt="Picture of the author"
@@ -112,7 +129,10 @@ const Strategies = () => {
               >
                 <div
                   className="cart w-100"
-                  onClick={() => setText("mangeContent")}
+                  onClick={() => {
+                    setText("managePannel");
+                    handleScroll("strategies", "start");
+                  }}
                 >
                   <Image
                     src={s3}
@@ -133,7 +153,13 @@ const Strategies = () => {
                 </div>
               </div>
               <div className="col-lg-4 col-md-4 col-sm-6 col-12 ">
-                <div className="cart" onClick={() => setText("shop")}>
+                <div
+                  className="cart"
+                  onClick={() => {
+                    setText("shop");
+                    handleScroll("strategies", "start");
+                  }}
+                >
                   <Image
                     src={s2}
                     alt="Picture of the author"
@@ -151,7 +177,13 @@ const Strategies = () => {
                     {`${languageData.desc_shop_service?.substring(0, 100)}...`}
                   </Typography>
                 </div>{" "}
-                <div className="cart" onClick={() => setText("mangeContent")}>
+                <div
+                  className="cart"
+                  onClick={() => {
+                    setText("mangeContent");
+                    handleScroll("strategies", "start");
+                  }}
+                >
                   <Image
                     src={s3}
                     alt="Picture of the author"

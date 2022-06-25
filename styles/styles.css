@@ -61,7 +61,7 @@
   position: relative;
   width: 7px;
   height: 7px;
-  padding: 10px;
+  padding: 10px !important;
   margin: 0;
 }
 .react-slideshow-container + ul.indicators .each-slideshow-indicator {
@@ -79,7 +79,7 @@
   height: 8px !important;
   border-radius: 10px !important;
   content: "";
-  background: #2513d1;
+  background: #2513d1 !important;
   text-align: center;
 }
 .react-slideshow-container + ul.indicators .each-slideshow-indicator:hover,
