@@ -121,6 +121,7 @@ const Wrapper = styled.div`
 
   @media (max-width: 568px) {
     box-shadow: none;
+    height: 160vh !important;
   }
 `;
 
@@ -143,6 +144,7 @@ const Right = styled.div`
   }
   @media (max-width: 568px) {
     padding: 1rem 0.5rem;
+    height: 50vh;
   }
 `;
 
@@ -156,6 +158,7 @@ const Left = styled.div`
 
   @media (max-width: 568px) {
     padding: 1rem 0.5rem;
+    height: 50vh;
   }
 `;
 
