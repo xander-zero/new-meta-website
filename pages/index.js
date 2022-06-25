@@ -1,11 +1,13 @@
 import { useSelector } from "react-redux";
 import AboutUs from "../components/AboutUs/AboutUs";
 import HeadTitle from "../components/HeadTitle/HeadTitle";
+import Security from "../components/Security/Security";
 import Services from "../components/Services/Services";
 import Slider from "../components/Slider/Slider";
 import Strategies from "../components/Strategies/Strategies";
 import Support from "../components/Support/Support";
-const Home = (props) => {
+
+const Home = () => {
   const languageSelctor = useSelector((state) => state.language);
   const { languageData } = languageSelctor;
 
@@ -19,6 +21,7 @@ const Home = (props) => {
       <AboutUs />
       <Support />
       <Services />
+      <Security />
       <Slider />
     </>
   );
