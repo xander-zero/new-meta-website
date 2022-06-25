@@ -9,7 +9,6 @@ import {
   SocialMediaIcon,
 } from "./contactStyle";
 import { Container } from "react-bootstrap";
-import moonImg from "../../assets/img/moon.svg";
 import InputField from "../../components/InputField/InputField";
 import Typography from "../../components/Typography/Typography";
 import Button from "../../components/Button/Button";
@@ -17,7 +16,7 @@ import { BsTelephoneFill } from "react-icons/bs";
 import { MdEmail, MdLocationPin } from "react-icons/md";
 import { useRouter } from "next/router";
 import { useSelector } from "react-redux";
-const ContactUs = () => {
+export default function Contact() {
   const router = useRouter();
   const languageSelector = useSelector((state) => state.language);
   const { languageData } = languageSelector;
@@ -112,5 +111,4 @@ const ContactUs = () => {
       </Wrapper>
     </Container>
   );
-};
-export default ContactUs;
+}
