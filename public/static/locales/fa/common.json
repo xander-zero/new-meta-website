@@ -7,7 +7,7 @@
   "menu_item_home": "صفحه اصلی",
   "menu_item_auth": "ثبت نام/ ورود",
   "menu_item_about": "درباره ما",
-  "menu_item_contact": "ارتباط با ما",
+  "menu_item_contact": "درخواست مشاوره",
   "menu_item_features": "ویژگی ها",
   "menu_item_service": "خدمات ما",
   "main_title": "معرفی شرکت - متانکست",
@@ -89,6 +89,6 @@
   "desc_encrypt_security": "اطلاعات کاربری شما کاملا بصورت رمزنگاری شده روی سرورهای ما ذخیره می شود",
   "title_backup_security": "بک آپ از اطلاعات",
   "desc_backup_security": "از اطلاعات شما هر 24 ساعت یکبار به صورت خودکار بک آپ گرفته می شود، همچنین امکان گرفتن نسخه پشتیبان توسط شما نیز هست",
-  "title_xander_security": "مقاوم دربرابر حملات SQLEngection و Mss",
-  "desc_xander_security": "سامانه متانکست دربرابر حملات SQLEngection و Mss مقاوم خواهد بود و همواره سرورهای اختصاصی خود را در برابر حملات متفاوت تست خواهد کرد"
+  "title_xander_security": "مقاوم دربرابر حملات SQLEngection و Xss",
+  "desc_xander_security": "سامانه متانکست دربرابر حملات SQLEngection و Xss مقاوم خواهد بود و همواره سرورهای اختصاصی خود را در برابر حملات متفاوت تست خواهد کرد"
 }

@@ -24,9 +24,15 @@ const ContactForm = () => {
           <ul>
             <li>
               <BsTelephoneFill size={20} color="#FA949D" />
-              <Typography size="14px" color="#E0D5EF">
-                +98-9152484006
-              </Typography>
+              {router.locale === "en" ? (
+                <Typography en size="14px" color="#E0D5EF">
+                  +98-9152484006
+                </Typography>
+              ) : (
+                <Typography size="14px" color="#E0D5EF">
+                  98-9152484006+
+                </Typography>
+              )}
             </li>
             <li>
               <MdEmail size={20} color="#FA949D" />

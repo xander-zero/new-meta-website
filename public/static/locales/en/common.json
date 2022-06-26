@@ -7,7 +7,7 @@
   "menu_item_home": "main page",
   "menu_item_auth": "sign up/ log in",
   "menu_item_about": "about us",
-  "menu_item_contact": "contact us",
+  "menu_item_contact": "consultation request",
   "menu_item_features": "features",
   "menu_item_service": "Services",
   "main_title": "introduction of a company - metanext",
@@ -89,6 +89,6 @@
   "desc_encrypt_security": "Your user information is stored completely encrypted on our servers",
   "title_backup_security": "Backup of information",
   "desc_backup_security": "Your data will be backed up automatically every 24 hours, and you can also back it up.",
-  "title_xander_security": "Resistant to SQLEngection and Mss attacks",
-  "desc_xander_security": "Methanext system will be resistant to SQLEngection and Mss attacks and will always test its dedicated servers against different attacks."
+  "title_xander_security": "Resistant to SQLEngection and Xss attacks",
+  "desc_xander_security": "Methanext system will be resistant to SQLEngection and Xss attacks and will always test its dedicated servers against different attacks."
 }

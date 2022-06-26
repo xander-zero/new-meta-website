@@ -7,7 +7,7 @@
   "menu_item_home": "الصفحة الرئيسية",
   "menu_item_auth": "اشترك تسجيل الدخول",
   "menu_item_about": "معلومات عنا",
-  "menu_item_contact": "اتصل بنا",
+  "menu_item_contact": "طلب استشارة",
   "menu_item_features": "صفات",
   "menu_item_service": "خدمات",
   "main_title": "مقدمة من شركة - متانکست",
@@ -88,6 +88,6 @@
   "desc_encrypt_security": "يتم تخزين معلومات المستخدم الخاصة بك بشكل مشفر بالكامل على خوادمنا",
   "title_backup_security": "النسخ الاحتياطي للمعلومات",
   "desc_backup_security": "سيتم نسخ بياناتك احتياطيًا تلقائيًا كل 24 ساعة ، ويمكنك أيضًا نسخها احتياطيًا.",
-  "title_xander_security": "مقاومة لهجمات SQLEngection و Mss",
-  "desc_xander_security": "سيكون نظام Methanext مقاومًا لهجمات SQLEngection و Mss وسيختبر دائمًا خوادمه المخصصة ضد الهجمات المختلفة."
+  "title_xander_security": "مقاومة لهجمات SQLEngection و Xss",
+  "desc_xander_security": "سيكون نظام Methanext مقاومًا لهجمات SQLEngection و Xss وسيختبر دائمًا خوادمه المخصصة ضد الهجمات المختلفة."
 }

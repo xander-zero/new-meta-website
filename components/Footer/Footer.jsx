@@ -12,9 +12,12 @@ import NavbarCont from "../Navbar/Navbar";
 import { Icon } from "../Card/cardStyle";
 import { useSelector } from "react-redux";
 import bgFooter from "../../assets/img/animatedshape.svg";
+import { useRouter } from "next/router";
 const Footer = () => {
   const languageSelector = useSelector((state) => state.language);
   const { languageData } = languageSelector;
+
+  const router = useRouter();
 
   const items = [
     {
@@ -29,7 +32,7 @@ const Footer = () => {
         </a>
       ),
       title: languageData.title_phonenumber_footer,
-      desc: "+98-9152484006",
+      desc: router.locale === "en" ? "+98-9152484006" : "98-9152484006+",
     },
     {
       id: "2",
