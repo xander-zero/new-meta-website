@@ -9,6 +9,8 @@ export const HeaderStyle = styled.div`
   .page-title {
     font-family: IRANSansBold;
     margin-top: 50px;
+    font-stretch: 125% !important;
+    /* transform: scaleX(1); */
   }
   .page-title-description {
     line-height: 2;

@@ -29,7 +29,7 @@ const Footer = () => {
         </a>
       ),
       title: languageData.title_phonenumber_footer,
-      desc: "051-91002131",
+      desc: "+98-9152484006",
     },
     {
       id: "2",

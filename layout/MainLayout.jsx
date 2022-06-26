@@ -21,7 +21,7 @@ const MainLayout = ({ children }) => {
 
   const handleCloseToggle = () => {
     const navbarToggle = document.getElementById("responsive-navbar-nav");
-    if (navbarToggle.classList.contains("show")) {
+    if (navbarToggle?.classList?.contains("show")) {
       navbarToggle.classList.remove("show");
     }
   };
