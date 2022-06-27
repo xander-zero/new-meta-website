@@ -7,9 +7,7 @@ import SwitchToggle from "../SwitchToggle/SwitchToggle";
 import { LoginWrapper } from "./LoginStyle";
 import logo from "../../assets/img/metanextlogo.png";
 import Typography from "../Typography/Typography";
-import login from "../../assets/img/Login_form_on_a_smartphone.jpg";
-import Link from "next/link";
-import { useRouter } from "next/router";
+import login from "../../assets/img/18208ererer789.png";
 const Login = () => {
   const [type, setType] = useState("login");
 
@@ -20,9 +18,12 @@ const Login = () => {
     <LoginWrapper>
       <div className="login-wrapper">
         <div className="row d-flex">
+          <div className="col-6 h-100 image-login">
+            <Image src={login} layout="intrinsic" alt="" />
+          </div>
           <div className="col-6 right-section ">
             <div className="row">
-              <div className="col-6">
+              <div className="col-6 image-logo">
                 <Image
                   src={logo}
                   layout="intrinsic"
@@ -88,9 +89,6 @@ const Login = () => {
                 </div>
               </div>
             </div>
-          </div>
-          <div className="col-6 h-100 image-login">
-            <Image src={login} layout="intrinsic" alt="" />
           </div>
         </div>
       </div>

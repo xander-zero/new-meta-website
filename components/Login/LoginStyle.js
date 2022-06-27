@@ -14,10 +14,41 @@ export const LoginWrapper = styled.div`
     width: 50%;
     border-radius: 25px;
     box-shadow: 0px 1px 40px #bdbdbd80;
+    .row {
+      @media (max-width: 1024px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .image-login {
+        @media (max-width: 768px) {
+          width: 100%;
+        }
+      }
+    }
 
+    .image-login {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
     .right-section {
       border-left: 1px solid #f4f4f4;
       padding: 20px;
+
+      .image-logo {
+        @media (max-width: 1024px) {
+          width: 100%;
+          align-items: flex-start;
+        }
+
+        @media (max-width: 768px) {
+          display: none;
+        }
+      }
+      @media (max-width: 768px) {
+        width: 100%;
+      }
       @media (max-width: 568px) {
         width: 100%;
       }
@@ -37,11 +68,6 @@ export const LoginWrapper = styled.div`
       .left-section {
         display: none;
       }
-    }
-  }
-  .image-login {
-    @media (max-width: 568px) {
-      display: none;
     }
   }
 `;
