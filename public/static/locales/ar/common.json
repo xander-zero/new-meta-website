@@ -1,5 +1,5 @@
 {
-  "login_title": "تسجيل الدخول في بهسود",
+  "login_title": "تسجيل الدخول في متانکست",
   "login_label_phonenumber": "رقم الهاتف",
   "login_label_password": "كلمه السر",
   "login_label_button": "ورود",
@@ -76,7 +76,8 @@
   "contact_phoneNumber": "رقم الهاتف",
   "contact_subject": "رسالة الموضوع",
   "contact_desc": "وصف",
-  "contact_button": "يتأكد",
+  "contact_button": "ارسال",
+  "contact_button_back": "العودة",
   "contact_subTitle": "معلومات التواصل",
   "contact_subTitle_desc": "املأ النموذج وسيتصل بك فريقنا في غضون الـ 24 ساعة القادمة",
   "title_security": "أمن المعلومات",

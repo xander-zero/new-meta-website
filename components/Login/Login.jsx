@@ -5,7 +5,7 @@ import InputField from "../InputField/InputField";
 import Button from "../../components/Button/Button";
 import SwitchToggle from "../SwitchToggle/SwitchToggle";
 import { LoginWrapper } from "./LoginStyle";
-import logo from "../../assets/img/logo.png";
+import logo from "../../assets/img/metanextlogo.png";
 import Typography from "../Typography/Typography";
 import login from "../../assets/img/Login_form_on_a_smartphone.jpg";
 import Link from "next/link";
@@ -26,8 +26,8 @@ const Login = () => {
                 <Image
                   src={logo}
                   layout="intrinsic"
-                  width="50px"
-                  height="47.5px"
+                  width="70px"
+                  height="60px"
                   alt=""
                 />
               </div>
@@ -36,7 +36,7 @@ const Login = () => {
               </div> */}
             </div>
             <div className="w-100 mt-5">
-              <Typography color="#000" className="mb-0">
+              <Typography color="#1e1666" weight="bold" className="mb-0">
                 {languageData?.login_title}
               </Typography>
             </div>
@@ -66,8 +66,8 @@ const Login = () => {
                   label={languageData.login_label_password}
                 />
               </div>
-              <div className="col-12">
-                <Button>
+              <div className="col-12 my-2">
+                <Button bgColor="#3E1F92" color="#fff">
                   {type === "login"
                     ? languageData.login_label_button
                     : languageData.singin_label_button}

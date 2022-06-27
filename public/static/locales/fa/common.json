@@ -1,5 +1,5 @@
 {
-  "login_title": "ثبت نام در به سود",
+  "login_title": "ثبت نام در متانکست",
   "login_label_phonenumber": "شماره تماس",
   "login_label_password": "رمز عبور",
   "login_label_button": "ورود",
@@ -77,7 +77,8 @@
   "contact_phoneNumber": "شماره تماس",
   "contact_subject": "عنوان پیام",
   "contact_desc": "توضیحات",
-  "contact_button": "تایید",
+  "contact_button": "ارسال",
+  "contact_button_back": "بازگشت",
   "contact_subTitle": "راه های ارتباطی با ما",
   "contact_subTitle_desc": "فرم مربوطه را پر کنید و تیم ما تا 24 ساعت آینده با شما تماس خواهند گرفت",
   "title_security": "امنیت اطلاعات",

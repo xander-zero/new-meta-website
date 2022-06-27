@@ -1,5 +1,5 @@
 {
-  "login_title": "login behsod",
+  "login_title": "Login Meta Next",
   "login_label_phonenumber": "phone number",
   "login_label_password": "password",
   "login_label_button": "login",
@@ -77,7 +77,8 @@
   "contact_phoneNumber": "Phone Number",
   "contact_subject": "Subject Message",
   "contact_desc": "Description",
-  "contact_button": "Confirm",
+  "contact_button": "Send",
+  "contact_button_back": "Back",
   "contact_subTitle": "Contact Information",
   "contact_subTitle_desc": "Fill out the form and our team will contact you within the next 24 hours",
   "title_security": "Information security",

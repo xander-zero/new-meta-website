@@ -101,6 +101,17 @@ const ContactForm = () => {
             <Button color="#fff" bgColor="#3E1F92" width="150px" size="14px">
               {languageData.contact_button}
             </Button>
+
+            <Button
+              className="mx-2"
+              color="#fff"
+              bgColor="#FA949D"
+              width="150px"
+              size="14px"
+              onClick={() => router.push("/")}
+            >
+              {languageData.contact_button_back}
+            </Button>
           </div>
         </div>
       </Left>
